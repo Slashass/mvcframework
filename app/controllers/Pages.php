@@ -8,17 +8,16 @@ class Pages extends Controller
     }
     public function index()
     {
-        $users = $this->userModel->getUsers();
+        // $users = $this->userModel->getUsers();
 
         $data = [
-            'title' => 'Home page',
-            'users' => $users
+            'title' => 'Home page'
         ];
         $this->view('pages/index', $data);
     }
 
-    public function about()
-    {
-        $this->view('pages/about');
-    }
+    // public function about()
+    // {
+    //     $this->view('pages/about');
+    // }
 }
